@@ -23,9 +23,10 @@ node index
 keep the server running 
 
 ##### On the client side:
-Language: JavaScript
-Framework: ReactJS
-Database: localhost server at 5000 
+
+* Language: JavaScript
+* Framework: ReactJS
+* Database: localhost server at 5000 
 
 Open a terminal and cd to the client side, then run this commands:
 
