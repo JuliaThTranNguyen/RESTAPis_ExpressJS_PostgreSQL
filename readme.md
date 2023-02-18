@@ -23,6 +23,10 @@ node index
 keep the server running 
 
 ##### On the client side:
+Language: JavaScript
+Framework: ReactJS
+Database: localhost server at 5000 
+
 Open a terminal and cd to the client side, then run this commands:
 
 ```
@@ -50,5 +54,5 @@ To address and fix the following issues.
 <img src="./img/pern.png">
 
 ##### Demo on localhost:
-<img src="./img/newdemo.png">
-<img src="./img/screenshot.png">
+<img src="./img/new.png">
+

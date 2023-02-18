@@ -1,12 +1,20 @@
 CREATE DATABASE todo_item;
 
-CREATE TABLE todo(
-    todo_id INT NOT NULL,
-    user_id INT NOT NULL,
-    name VARCHAR(65) UNIQUE NOT NULL,
-    description VARCHAR(255),
-    update_status TIMESTAMP NOT NULL,
-    created_status TIMESTAMP NOT NULL,
-    login_status TIMESTAMP,
-    PRIMARY KEY(todo_id, user_id)
+CREATE TYPE mood AS ENUM ('NotStarted', 'OnGoing', 'Completed');
+CREATE TABLE Todo (
+  id SERIAL PRIMARY KEY,
+  name VARCHAR(255) NOT NULL,
+  description VARCHAR(255),
+  user_id INTEGER NOT NULL,
+  created_at TIMESTAMP NOT NULL,
+  updated_at TIMESTAMP NOT NULL,
+  status mood NOT NULL
+);
+
+CREATE TABLE User (
+  id SERIAL PRIMARY KEY,
+  email VARCHAR(255) NOT NULL,
+  password VARCHAR(255) NOT NULL,
+  created_at TIMESTAMP NOT NULL,
+  updated_at TIMESTAMP NOT NULL
 );
